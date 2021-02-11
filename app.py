@@ -97,6 +97,7 @@ def deal():
     player.draw(deck)
     dealer.draw(deck)
     player.draw(deck)
+    player.aceCheck()
     global faceDownCard
     faceDownCard = deck.removeCard()
     canvas.delete("card_tag")
